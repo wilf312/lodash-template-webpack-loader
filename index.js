@@ -37,8 +37,7 @@ function lodashTemplateLoader(content, map) {
      *
      * Interpret configuration by combining query params and `lodashTemplateLoader` options
      */
-
-    var options = this.options.lodashTemplateLoader || {};
+    var options = {};
     if (_.isFunction(options)) {
         options = options.call(this, this) || {};
     }
